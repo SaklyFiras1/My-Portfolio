@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #13131a;
+  --bg-tertiary: #1c1c26;
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0b0;
+  --accent: #00d9ff;
+  --accent-dark: #00b8d9;
+}
+
+@layer base {
+  body {
+    @apply bg-dark-900 text-white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-accent-500 via-blue-400 to-purple-400 bg-clip-text text-transparent;
+  }
+  
+  .glow-effect {
+    text-shadow: 0 0 20px rgba(0, 217, 255, 0.5);
+  }
+  
+  .card-glow {
+    box-shadow: 0 0 30px rgba(0, 217, 255, 0.1);
+  }
+  
+  .border-gradient {
+    border: 1px solid transparent;
+    background: linear-gradient(var(--bg-tertiary), var(--bg-tertiary)) padding-box,
+                linear-gradient(135deg, rgba(0, 217, 255, 0.3), rgba(168, 85, 247, 0.3)) border-box;
+  }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-dark);
+}
+
+/* Selection */
+::selection {
+  background: var(--accent);
+  color: var(--bg-primary);
+}
