@@ -1,6 +1,6 @@
 'use client'
 
-import { Mail, Linkedin, Github, MessageCircle, Send } from 'lucide-react'
+import { Mail, Linkedin, Github, MessageCircle } from 'lucide-react'
 import { useState } from 'react'
 
 export default function Contact() {
@@ -52,10 +52,10 @@ export default function Contact() {
             Get In Touch
           </h3>
           <h2 className="font-display text-4xl md:text-5xl font-bold mb-4">
-            Let's Work <span className="text-gradient">Together</span>
+            Let&apos;s Work <span className="text-gradient">Together</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Have a project in mind? I'd love to hear about it. Drop me a message and let's create something amazing.
+            Have a project in mind? I&apos;d love to hear about it. Drop me a message and let&apos;s create something amazing.
           </p>
         </div>
 
@@ -96,10 +96,10 @@ export default function Contact() {
             {/* Availability */}
             <div className="bg-gradient-to-r from-accent-500/10 to-purple-500/10 rounded-2xl p-8 border border-accent-500/30">
               <h4 className="font-display text-xl font-bold mb-3">
-                Available for Freelance and collaborations  
+                Available for Freelance and collaborations
               </h4>
               <p className="text-gray-400 mb-4">
-                I'm currently available for freelance work and new project opportunities. Let's discuss how I can help bring your ideas to life.
+                I&apos;m currently available for freelance work and new project opportunities. Let&apos;s discuss how I can help bring your ideas to life.
               </p>
               <div className="flex items-center gap-2 text-accent-500">
                 <div className="w-2 h-2 bg-accent-500 rounded-full animate-pulse"></div>
@@ -107,9 +107,6 @@ export default function Contact() {
               </div>
             </div>
           </div>
-
-          {/* Contact Form */}
-      
         </div>
       </div>
     </section>

@@ -7,15 +7,14 @@ export default function Hero() {
     document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })
   }
 
-const downloadCV = () => {
-  const link = document.createElement('a')
-  link.href = 'https://drive.google.com/uc?export=download&id=1NpBo_X_QcRAHs0DScIOjXqRpCd2jsR7q'
-  link.download = 'CV.pdf'
-  document.body.appendChild(link)
-  link.click()
-  document.body.removeChild(link)
-}
-
+  const downloadCV = () => {
+    const link = document.createElement('a')
+    link.href = 'https://drive.google.com/uc?export=download&id=1NpBo_X_QcRAHs0DScIOjXqRpCd2jsR7q'
+    link.download = 'CV.pdf'
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -30,7 +29,7 @@ const downloadCV = () => {
         <div className="space-y-6 animate-fade-in">
           {/* Greeting */}
           <p className="text-accent-500 text-lg md:text-xl font-medium">
-            Hi, I'm
+            Hi, I&apos;m {/* CORRECTION ICI */}
           </p>
 
           {/* Name */}
