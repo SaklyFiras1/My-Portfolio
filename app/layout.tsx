@@ -13,8 +13,8 @@ const orbitron = Orbitron({
 })
 
 export const metadata: Metadata = {
-  title: 'Full-Stack Developer | Modern Web Applications',
-  description: 'Professional full-stack developer specializing in building modern web applications for businesses.',
+  title: 'Sakly-Firas_Full-Stack Software Engineer',
+  description: 'Professional full-stack Engineer specializing in building modern web applications for businesses.',
 }
 
 export default function RootLayout({
